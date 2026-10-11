@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --fonte1: "Libre Baskerville", serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+
+    margin: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 35px;
+}
+body{
+
+    background-image: linear-gradient(to bottom,rgb(199, 71, 71), rgb(51, 5, 5));
+    height: 100vh;
+    font-family: var(--fonte1);
+    color: white;
+}
+.primeira-section{
+
+    padding: 40px 0px 60px 40px;
+}
+.container-conteudo {
+    display:inline-block;
+    width: 48%;
+    vertical-align: middle;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 20px;
+   
+}
+.container-imagem{
+    
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+}
+.container-botao{
+
+    display: inline-block; /* O botão passa a ter o tamanho EXATO do seu texto */
+    margin-top: 30px;
+    padding: 20px 20px;
+    width: fit-content; /*deixa ele sempre do tamanho do conteúdo de dentro*/
+    border-radius: 5px;
+    background-color: #8a2727;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;/*tempo da mudança de cor*/
+}
+.container-botao:hover{
+    background-color:white; /*quando passa o mouse em cima muda de cor*/
+    color:#8a2727;
+}
+header > h1{
+    font-family: var(--fonte1);
+    font-weight: 700;
+    color: white;
+
+}
+
+
+section > a{
+    background-color: #8a2727;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    
+}
+
