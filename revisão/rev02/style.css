@@ -20,13 +20,14 @@ header{
 body{
 
     background-image: linear-gradient(to bottom,rgb(199, 71, 71), rgb(51, 5, 5));
-    height: 100vh;
+     min-height: 100vh;
     font-family: var(--fonte1);
     color: white;
+    background-attachment: fixed; /* Mantém o gradiente fixo e uniforme na tela toda */
 }
-.primeira-section{
+#primeira-section{
 
-    padding: 40px 0px 60px 40px;
+    padding: 40px 0px 80px 40px;
 }
 .container-conteudo {
     display:inline-block;
@@ -35,18 +36,23 @@ body{
     font-size: 40px;
     text-align: center;
     margin-right: 20px;
+    line-height: 1.5;
    
 }
-.container-imagem{
+.container-imagem {
     
     display: inline-block;
-    width: 45%;
     vertical-align: middle;
+    width: 100% ;
+    height: 100%;
+    clip-path: path('M 312.41 200.00 C 316.93 231.74 354.84 278.83 344.64 305.09 C 334.44 331.35 282.15 354.01 251.20 357.56 C 220.24 361.11 188.81 337.14 158.94 326.38 C 129.06 315.63 94.58 314.11 71.93 293.05 C 49.28 271.98 17.01 226.64 23.03 200.00 C 29.05 173.36 84.04 150.09 108.04 133.19 C 132.05 116.29 145.09 107.84 167.05 98.58 C 189.00 89.32 214.69 74.96 239.76 77.63 C 264.84 80.31 305.39 94.24 317.50 114.63 C 329.61 135.03 307.89 168.26 312.41 200.00 Z');
 }
+
+
 .container-botao{
 
     display: inline-block; /* O botão passa a ter o tamanho EXATO do seu texto */
-    margin-top: 30px;
+    margin-top: 100px;
     padding: 20px 20px;
     width: fit-content; /*deixa ele sempre do tamanho do conteúdo de dentro*/
     border-radius: 5px;
@@ -55,6 +61,8 @@ body{
     text-decoration: none;
     transition: 0.2s;/*tempo da mudança de cor*/
 }
+
+
 .container-botao:hover{
     background-color:white; /*quando passa o mouse em cima muda de cor*/
     color:#8a2727;
@@ -67,7 +75,7 @@ header > h1{
 }
 
 
-section > a{
+section#primeira-section > a{
     background-color: #8a2727;
     padding: 10px;
     text-decoration: none;
@@ -76,3 +84,29 @@ section > a{
     
 }
 
+section.segunda-section > h2{
+
+    font-size: 60px;
+    text-align: center;
+    margin: 40px 0px 40px 20px ;
+    
+}
+
+#img{
+
+    background-image: url('../rev02/imagens/glenov-brankovic-e4B5AvA7Jqo-unsplash.jpg');
+    background-position: right center;
+    background-size: cover;          /* Faz a imagem cobrir todo o espaço */
+    background-attachment: fixed;    /* AQUI É ONDE O PARALLAX ACONTECE */
+    min-height: 400px;               /* Altura necessária para aparecer a imagem */
+}
+
+
+section.segunda-section > p{
+
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 40px 20px 40px;
+    background-attachment: fixed;
+}

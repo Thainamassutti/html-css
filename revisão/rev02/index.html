@@ -11,34 +11,36 @@
      <h1>SAKURA</h1>
 </header>
 <main>
-    <section class="primeira-section">
-        <div class = container-conteudo>
+    <section id="primeira-section">
+        <div class = "container-conteudo">
             <p>
                 IMERSÃO CULTURAL ATRAVÉS DO SABOR
             </p>
             <a href="http://" class="container-botao">Conhecer Espaço</a>
         </div><!-- -->
         <div class="container-imagem">
-            
-            <source media="(max-width:500px)" srcset="imagens/sushiPequena.jpg" type="image/jpg">
-           
-            <img src="imagens/sushiMedio.jpg" alt="sushis e sashimis">
+            <picture>
+                <source media="(max-width:500px)" srcset="imagens/sushiPequena.jpg" type="image/jpg"> 
+                <!--precisa estar dentro de uma tag picture para funcionar-->
+                <img src="imagens/sushiMedio.jpg" alt="sushis e sashimis">
+            </picture>
         </div>
         
     </section>
-    <section>
+    <section class="segunda-section">
         <h2>ESPAÇO AMPLO E ACONCHEGANTE</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id.</p>
 
-        <picture>
-            <img src="imagens/glenov-brankovic-e4B5AvA7Jqo-unsplash.jpg" alt="foto restaurante">
-        </picture>
+    </section>
+    <section id="img">
+
+    </section>
+
+    <section class="segunda-section">
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.
         </p>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-        <picture>
-            
-        </picture>
+       
 
     </section>
 
